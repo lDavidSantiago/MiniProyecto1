@@ -1,9 +1,20 @@
 import java.util.Scanner;
 
-class Menu {
-    static void menu(){
-        Scanner scanner = new Scanner(System.in);
-        byte opcion;
+
+public class Menuu {
+    Scanner scanner = new Scanner(System.in);
+    private byte opcion;
+    public Menuu(){
+        
+    }
+    public static void clearScreen() {
+
+        System.out.print("\033[H\033[2J");
+        System.out.flush();
+     
+    }
+    public void mostrarMenu(){
+
         System.out.println("===VETERINARIA PATITAS==");
         System.out.println("\nBienvenido, estamos para servirle.\n");
         System.out.println("1. Insertar mascota\n2. Actualizar mascota\n3. Eliminar mascota\n4. Buscar mascota por nombre\n5. Listar todas las mascotas");
@@ -30,7 +41,9 @@ class Menu {
             
         
             default:
-                menu();
+                clearScreen();
+
+                mostrarMenu();
                 break;
         }
         
