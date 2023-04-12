@@ -3,6 +3,15 @@ public class Pet {
     private String origin_country;
     private float pet_price;
 
+    public Pet() {
+    }
+
+    public Pet(boolean vaccine, String origin_country, float pet_price) {
+        this.vaccine = vaccine;
+        this.origin_country = origin_country;
+        this.pet_price = pet_price;
+    }
+
     public boolean isVaccine() {
         return vaccine;
     }
