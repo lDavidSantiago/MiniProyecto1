@@ -17,7 +17,7 @@ public class Menuu {
         clearScreen();
         System.out.println("===VETERINARIA PATITAS==");
         System.out.println("Bienvenido al menu de funciones.");
-        System.out.println("1. Cuantas mascotas tienen la vacuna malota?\n2. Top 5 mascotas más costosas\n3. Que mascotas no tienen país de origen en latinoamérica?\n4. Finalizar programa");
+        System.out.println("1. Cuantas mascotas tienen la vacuna malota?\n2. Top 5 mascotas mas costosas\n3. Que mascotas no tienen pais de origen en latinoamerica?\n4. Regresar al menu de gestion\n5. Finalizar programa");
         System.out.print("Seleccione una opcion: ");
         opcion = scanner.nextByte();
         switch(opcion){
@@ -28,8 +28,10 @@ public class Menuu {
             case 3: 
                 break;
             case 4:
+                mostrarMenu();
                 break;
-            
+            case 5:
+                break;
         }
 
     }
