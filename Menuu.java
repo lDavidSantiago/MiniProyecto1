@@ -1,10 +1,11 @@
 import java.util.Scanner;
 
 
+
 public class Menuu {
+    public static ArrayObject Mascotas = new ArrayObject();
     Scanner scanner = new Scanner(System.in);
     private byte opcion;
-    ArrayObject Mascotas = new ArrayObject();
 
     public Menuu(){
         
@@ -58,16 +59,18 @@ public class Menuu {
                 mostrarMenu();
                 break;
             case 2:
-
+                Mascotas.change_pets_values();
+                clearScreen();
+                mostrarMenu();
                 break;
             case 3:
-
+                Mascotas.test();
                 break;
             case 4:
 
                 break;
             case 5:
-                Mascotas.main();
+                Mascotas.main_array();
                 //
                 byte a;
                 System.out.println("Presione 1 para continuar");
