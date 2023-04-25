@@ -1,11 +1,14 @@
 import java.util.ArrayList;
 import java.util.Scanner;
-import java.util.concurrent.CountDownLatch;
 
 public class ArrayObject {
     ArrayList<Pet> arrayOfPets = new ArrayList<>();
     Scanner input = new Scanner(System.in);
-
+    public void clearScreen() {
+        System.out.print("\033[H\033[2J");
+        System.out.flush();
+     
+    }
     public void main_array (){
         for (Pet pet: arrayOfPets) {
             System.out.println("Nombre: "+pet.pet_name+", Raza: "+pet.raze+", Vacuna: "+pet.vaccine+", Origen: "+pet.origin_country+ ", Precio: "+pet.pet_price+", Animal: "+pet.animal);
@@ -37,6 +40,7 @@ public class ArrayObject {
         input.nextLine();
 
     }
+    //PUNTO 2
     public void change_pets_values(){
         System.out.println("ingrese el nombre del animal que quiere realizar cambios: ");
         String temp_name = input.nextLine();
@@ -65,10 +69,38 @@ public class ArrayObject {
         }
         input.nextLine();   
         }
+        //PUNTO 3
+        public void remove_mascota(){
+            System.out.println("ingrese el nombre del animal que quiere eliminar: ");
+            String temp_name = input.nextLine();
+            int index = 0;
+            for (Pet pet: arrayOfPets){
+                String xd = pet.pet_name;
+                    if(temp_name.equals(xd)){
+                        clearScreen();
+                        arrayOfPets.remove(index);}
+                index = index+1;}
+            Scanner s = new Scanner(System.in);
+            s.nextLine();}
+
+
+        //PUNTO 4
         public void test(){
-            arrayOfPets.get(0).presentation();
+            System.out.println("ingrese el nombre del animal que quiere buscar: ");
+            String temp_name = input.nextLine();
+            int index = 0;
+            for (Pet pet: arrayOfPets){
+                String xd = pet.pet_name;
+                    if(temp_name.equals(xd)){
+                        clearScreen();
+                        arrayOfPets.get(index).presentation();}
+                index = index+1;}
+            Scanner s = new Scanner(System.in);
+            s.nextLine();
+
         }
-    }
+
+}
 
     
     

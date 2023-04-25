@@ -64,10 +64,14 @@ public class Menuu {
                 mostrarMenu();
                 break;
             case 3:
-                Mascotas.test();
+                Mascotas.remove_mascota();
+                clearScreen();
+                mostrarMenu();
                 break;
             case 4:
-
+            Mascotas.test();
+            clearScreen();
+            mostrarMenu();
                 break;
             case 5:
                 Mascotas.main_array();
