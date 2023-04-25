@@ -1,16 +1,21 @@
 import java.util.ArrayList;
 import java.util.Scanner;
+import java.util.concurrent.CountDownLatch;
 
 public class ArrayObject {
     ArrayList<Pet> arrayOfPets = new ArrayList<>();
     Scanner input = new Scanner(System.in);
 
-    public void main (){
+    public void main_array (){
         for (Pet pet: arrayOfPets) {
-            System.out.println("Vacuna: "+pet.vaccine+", Origen: "+pet.origin_country+ " Precio: "+pet.pet_price);
+            System.out.println("Nombre: "+pet.pet_name+", Raza: "+pet.raze+", Vacuna: "+pet.vaccine+", Origen: "+pet.origin_country+ ", Precio: "+pet.pet_price+", Animal: "+pet.animal);
         }
     }
     public void insert_pets(){
+        System.out.println("Nombre: ");
+        String originName = input.nextLine();
+        System.out.println("Raza: ");
+        String razeName = input.nextLine();
         System.out.println("Vacuna Malota: ");
         Boolean vaccineValue = input.nextBoolean();
         System.out.println("Origen: ");
@@ -18,43 +23,52 @@ public class ArrayObject {
         String originValue = input.nextLine();
         System.out.println("Precio: ");
         float priceValue = input.nextFloat();
-        Pet n = new Pet(vaccineValue,originValue,priceValue);
-        arrayOfPets.add(n);
-    }
-}
-    class Pet {
-    boolean vaccine;
-    String origin_country;
-    float pet_price;
+        System.out.println("Su mascota es un perro o un gato? Gato = 1 | Perro = 2");
+        byte identifier = input.nextByte();
+        if(identifier==1){
+            Cat n = new Cat(originName,razeName,vaccineValue,originValue,priceValue,"Gato");
+            arrayOfPets.add(n);
+        }
+        else if(identifier==2){
+            Cat n = new Cat(originName,razeName,vaccineValue,originValue,priceValue,"Perro");
+            arrayOfPets.add(n);
 
+        }
+        input.nextLine();
 
-    public Pet(boolean vaccine, String origin_country, float pet_price) {
-        this.vaccine = vaccine;
-        this.origin_country = origin_country;
-        this.pet_price = pet_price;
+    }
+    public void change_pets_values(){
+        System.out.println("ingrese el nombre del animal que quiere realizar cambios: ");
+        String temp_name = input.nextLine();
+        int index = 0;
+        for (Pet pet: arrayOfPets){
+            String xd = pet.pet_name;
+                if(temp_name.equals(xd)){
+                    System.out.println("Nombre: ");
+                    String newName = input.nextLine();
+                    System.out.println("Raza: ");
+                    String newrazeName = input.nextLine();
+                    System.out.println("Vacuna Malota: ");
+                    Boolean newvaccineValue = input.nextBoolean();
+                    System.out.println("Origen: ");
+                    input.nextLine();
+                    String neworiginValue = input.nextLine();
+                    System.out.println("Precio: ");
+                    float newpriceValue = input.nextFloat();
+                        //Remplazar los valores
+                        arrayOfPets.get(index).setPet_name(newName);
+                        arrayOfPets.get(index).setOrigin_country(neworiginValue);
+                        arrayOfPets.get(index).setPet_price(newpriceValue);
+                        arrayOfPets.get(index).setVaccine(newvaccineValue);
+                        arrayOfPets.get(index).setRaze(newrazeName);}
+            index = index+1; //Para saber la posicion actual de el array con respecto a la iteracion
+        }
+        input.nextLine();   
+        }
+        public void test(){
+            arrayOfPets.get(0).presentation();
+        }
     }
 
-    public boolean isVaccine() {
-        return vaccine;
-    }
-
-    public void setVaccine(boolean vaccine) {
-        this.vaccine = vaccine;
-    }
-
-    public float getPet_price() {
-        return pet_price;
-    }
-
-    public void setPet_price(float pet_price) {
-        this.pet_price = pet_price;
-    }
-
-    public String getOrigin_country() {
-        return origin_country;
-    }
-
-    public void setOrigin_country(String origin_country) {
-        this.origin_country = origin_country;
-    }
-}
+    
+    
