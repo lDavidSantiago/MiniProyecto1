@@ -1,12 +1,16 @@
+import java.util.Scanner;
+
 public class Pet {
     private boolean vaccine;
     private String origin_country;
     private float pet_price;
+    public int[] ArregloMascotas;
+    Scanner scanner = new Scanner(System.in);
 
     public Pet() {
     }
 
-    public Pet(boolean vaccine, String origin_country, float pet_price) {
+    public Pet(String animal,boolean vaccine, String origin_country, float pet_price) {
         this.vaccine = vaccine;
         this.origin_country = origin_country;
         this.pet_price = pet_price;
@@ -36,4 +40,12 @@ public class Pet {
         this.origin_country = origin_country;
     }
 
+    public void addPet(){
+        String animalType;
+        System.out.println("Tu mascota es un perro o un gato?: ");
+        animalType = scanner.nextLine();
+
+        
+        Pet mascota = new Pet();
+    }
 }
