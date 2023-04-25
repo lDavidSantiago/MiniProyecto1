@@ -1,15 +1,30 @@
 import java.util.ArrayList;
+import java.util.Scanner;
+
 public class ArrayObject {
-    public static void main (){
-        ArrayList<Pet> arrayOfPets = new ArrayList<>();
+    ArrayList<Pet> arrayOfPets = new ArrayList<>();
+    Scanner input = new Scanner(System.in);
+
+    public void main (){
         arrayOfPets.add(new Pet(false, null, 0));
         arrayOfPets.add(new Pet(false, "Colombia", 15000));
         arrayOfPets.add(new Pet(false, "Colombia", 15000));
         arrayOfPets.add(new Pet(false, "Colombia", 15000));
 
         for (Pet pet: arrayOfPets) {
-            System.out.println("Vacuna: "+pet.vaccine+", Origen"+pet.origin_country+ "Precio "+pet.pet_price);
+            System.out.println("Vacuna: "+pet.vaccine+", Origen: "+pet.origin_country+ "Precio: "+pet.pet_price);
         }
+    }
+    public void insert_pets(){
+        System.out.println("Vacuna: ");
+        Boolean vaccineValue = input.nextBoolean();
+        System.out.println("Origen: ");
+        input.nextLine();
+        String originValue = input.nextLine();
+        System.out.println("Precio: ");
+        float priceValue = input.nextFloat();
+        Pet n = new Pet(vaccineValue,originValue,priceValue);
+        arrayOfPets.add(n);
     }
 }
     class Pet {
