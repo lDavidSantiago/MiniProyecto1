@@ -10,7 +10,7 @@ public class Pet {
     public Pet() {
     }
 
-    public Pet(String animal,boolean vaccine, String origin_country, float pet_price) {
+    public Pet(boolean vaccine, String origin_country, float pet_price) {
         this.vaccine = vaccine;
         this.origin_country = origin_country;
         this.pet_price = pet_price;

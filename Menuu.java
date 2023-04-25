@@ -4,6 +4,7 @@ import java.util.Scanner;
 public class Menuu {
     Scanner scanner = new Scanner(System.in);
     private byte opcion;
+
     public Menuu(){
         
     }
@@ -13,7 +14,7 @@ public class Menuu {
      
     }
     public void menuFuncional(){//6
-        byte opcion;
+        byte opcion=0;
         clearScreen();
         System.out.println("===VETERINARIA PATITAS==");
         System.out.println("Bienvenido al menu de funciones.");
@@ -28,6 +29,7 @@ public class Menuu {
             case 3: 
                 break;
             case 4:
+                clearScreen();
                 mostrarMenu();
                 break;
             case 5:
@@ -37,10 +39,11 @@ public class Menuu {
     }
     public void mostrarMenu(){
         clearScreen();
+        opcion =0;
         System.out.println("===VETERINARIA PATITAS==");
         System.out.println("\nMENU DE GESTION");
         System.out.println("\nBienvenido, estamos para servirle.\n");
-        System.out.println("1. Insertar mascota\n2. Actualizar mascota\n3. Eliminar mascota\n4. Buscar mascota por nombre\n5. Listar todas las mascotas\n6. Menu de opciones funcionales");
+        System.out.println("1. Insertar mascota\n2. Actualizar mascota\n3. Eliminar mascota\n4. Buscar mascota por nombre\n5. Listar todas las mascotas\n6. Menu de opciones funcionales\n7. Finalizar programa");
         System.out.print("Seleccione una opcion: ");
         opcion = scanner.nextByte();
         
@@ -65,7 +68,11 @@ public class Menuu {
             
             
             case 6:
+                clearScreen();
                 menuFuncional();
+                break;
+            case 7:
+                System.exit(0);
                 break;  
             default:
                 clearScreen();

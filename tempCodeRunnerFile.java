@@ -1,0 +1,1 @@
+new Pet(false, "Colombia", 15000)
