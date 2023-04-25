@@ -33,6 +33,7 @@ public class Menuu {
                 mostrarMenu();
                 break;
             case 5:
+                System.exit(0);
                 break;
         }
 
