@@ -6,17 +6,12 @@ public class ArrayObject {
     Scanner input = new Scanner(System.in);
 
     public void main (){
-        arrayOfPets.add(new Pet(false, null, 0));
-        arrayOfPets.add(new Pet(false, "Colombia", 15000));
-        arrayOfPets.add(new Pet(false, "Colombia", 15000));
-        arrayOfPets.add(new Pet(false, "Colombia", 15000));
-
         for (Pet pet: arrayOfPets) {
-            System.out.println("Vacuna: "+pet.vaccine+", Origen: "+pet.origin_country+ "Precio: "+pet.pet_price);
+            System.out.println("Vacuna: "+pet.vaccine+", Origen: "+pet.origin_country+ " Precio: "+pet.pet_price);
         }
     }
     public void insert_pets(){
-        System.out.println("Vacuna: ");
+        System.out.println("Vacuna Malota: ");
         Boolean vaccineValue = input.nextBoolean();
         System.out.println("Origen: ");
         input.nextLine();
