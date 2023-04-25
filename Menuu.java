@@ -4,6 +4,7 @@ import java.util.Scanner;
 public class Menuu {
     Scanner scanner = new Scanner(System.in);
     private byte opcion;
+    ArrayObject Mascotas = new ArrayObject();
 
     public Menuu(){
         
@@ -47,12 +48,14 @@ public class Menuu {
         System.out.println("1. Insertar mascota\n2. Actualizar mascota\n3. Eliminar mascota\n4. Buscar mascota por nombre\n5. Listar todas las mascotas\n6. Menu de opciones funcionales\n7. Finalizar programa");
         System.out.print("Seleccione una opcion: ");
         opcion = scanner.nextByte();
-        
+        clearScreen();
         switch (opcion) {
             //manejar recursividad para siempre al finalizar volver al menu.
             
             case 1:
-                
+                Mascotas.insert_pets();
+                clearScreen();
+                mostrarMenu();
                 break;
             case 2:
 
@@ -64,7 +67,14 @@ public class Menuu {
 
                 break;
             case 5:
-
+                Mascotas.main();
+                //
+                byte a;
+                System.out.println("Presione 1 para continuar");
+                a=scanner.nextByte();
+                //
+                clearScreen();
+                mostrarMenu();
                 break;
             
             
