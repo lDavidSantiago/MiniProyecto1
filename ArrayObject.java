@@ -95,6 +95,7 @@ public class ArrayObject {
                         arrayOfPets.get(index).presentation();}
                 index = index+1;}
             Scanner s = new Scanner(System.in);
+            s.close();
             s.nextLine();
 
         }
