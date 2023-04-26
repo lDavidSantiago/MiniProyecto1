@@ -1,6 +1,6 @@
 
-<h1>Miniproyecto 1<h1>
-Vamos a seguir trabajando sobre el proyecto que hemos visto en clase, el de los perros y gatos.
+<h1>Miniproyecto 1</h1>
+<h2>Vamos a seguir trabajando sobre el proyecto que hemos visto en clase, el de los perros y gatos.
 Vamos a realizar una veterinaria a traves de un menu por consola con las siguiente opciones:
 1. Insertar mascota
 2. Actualizar mascota
@@ -26,4 +26,4 @@ en clase)
 ● Los detalles porcentuales por rubrica no los tengo aun, pero les mando este enunciado
 para que lo vayan trabajando en semana santa
 ● Grupo de 3 personas
-● Fecha de entrega: 19 de abril de 2023
+● Fecha de entrega: 19 de abril de 2023</h2>
