@@ -15,7 +15,7 @@ de estas opciones funcionales:</h3>
 <h3>1. Qué mascotas tienen la vacuna malota</h3>
 <h3>2. Cual es el top 5 de las mascotas más costosas.</h3>
 <h3>3. Que mascotas no tienen país de origen en latinoamérica.</h3>
-Notas
+<h4>Notas
 ● Debemos usar github para subir los cambios. No basta con que usted y con su nombre
 de usuario suba un cambio y lo haga una sola vez y ya, debe verse que usted hizo
 varios commits a lo largo del tiempo. Debe realizar pull request para cada commit y
@@ -26,4 +26,4 @@ en clase)
 ● Los detalles porcentuales por rubrica no los tengo aun, pero les mando este enunciado
 para que lo vayan trabajando en semana santa
 ● Grupo de 3 personas
-● Fecha de entrega: 19 de abril de 2023</h2>
+● Fecha de entrega: 19 de abril de 2023</h4>
