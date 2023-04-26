@@ -1,5 +1,5 @@
 
-<Title><h2 align="center">Centered Heading</h2></Titl>
+<Tite><h2 align="center">Centered Heading</h2></Titl>
 
 
 <h3>Vamos a seguir trabajando sobre el proyecto que hemos visto en clase, el de los perros y gatos.
