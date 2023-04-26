@@ -113,7 +113,7 @@ public class ArrayObject {
             s.close();
 
         }
-        
+
         public void tieneVacunas (){
             int index = 0;
             for (Pet pet: arrayOfPets){
@@ -125,7 +125,6 @@ public class ArrayObject {
                 index = index+1;}
             Scanner s = new Scanner(System.in);
             s.nextLine();
-            s.close();
 
 
         }
