@@ -79,9 +79,9 @@ public class Menuu {
             case 5:
                 Mascotas.main_array();
                 //
-                byte a;
-                System.out.println("Presione 1 para continuar");
-                a=scanner.nextByte();
+                System.out.print("Presione una tecla para continuar");
+                scanner.nextLine();
+                scanner.nextLine();
                 //
                 clearScreen();
                 mostrarMenu();
