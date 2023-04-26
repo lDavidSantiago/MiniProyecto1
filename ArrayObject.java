@@ -107,11 +107,7 @@ public class ArrayObject {
                         clearScreen();
                         arrayOfPets.get(index).presentation();}
                 index = index+1;}
-            Scanner s = new Scanner(System.in);
-            
-            s.nextLine();
-            s.close();
-
+                input.nextLine();
         }
 
         public void tieneVacunas (){
@@ -123,10 +119,7 @@ public class ArrayObject {
                         arrayOfPets.get(index).presentation();}
                     
                 index = index+1;}
-            Scanner s = new Scanner(System.in);
-            s.nextLine();
-
-
+                input.nextLine();
         }
 }
 
