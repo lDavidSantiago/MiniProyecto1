@@ -25,6 +25,9 @@ public class Menuu {
         opcion = scanner.nextByte();
         switch(opcion){
             case 1:
+            Mascotas.tieneVacunas();
+            clearScreen();
+            mostrarMenu();
                 break;
             case 2:
                 break;

@@ -42,11 +42,11 @@ public class ArrayObject {
         }
         ////////////////////////////////////////////////////////////////////////////////////////////////
         if(identifier==1){
-            System.out.println("Su gato ha sido introducido al menui correctamente :D");
+            System.out.println("Su gato ha sido introducido al menu correctamente :D");
             input.nextLine();
         }
         else if(identifier==2){
-            System.out.println("Su perro ha sido introducido al menui correctamente :D");
+            System.out.println("Su perro ha sido introducido al menu correctamente :D");
             input.nextLine();
         }
         input.nextLine();
@@ -108,11 +108,25 @@ public class ArrayObject {
                         arrayOfPets.get(index).presentation();}
                 index = index+1;}
             Scanner s = new Scanner(System.in);
-            s.close();
+            
             s.nextLine();
+            s.close();
 
         }
-
+        public void tieneVacunas (){
+            int index = 0;
+            for (Pet pet: arrayOfPets){
+                boolean xd = pet.vaccine;
+                    if (xd){
+                        clearScreen();
+                        arrayOfPets.get(index).presentation();}
+                    
+                index = index+1;}
+            Scanner s = new Scanner(System.in);
+            s.nextLine();
+            s.close();
+            
+        }
 }
 
     
