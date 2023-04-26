@@ -1,5 +1,5 @@
 
-Miniproyecto 1
+<h1>Miniproyecto 1<h1>
 Vamos a seguir trabajando sobre el proyecto que hemos visto en clase, el de los perros y gatos.
 Vamos a realizar una veterinaria a traves de un menu por consola con las siguiente opciones:
 1. Insertar mascota
