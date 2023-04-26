@@ -1,6 +1,4 @@
-<Title><h2 align="center">Centered Heading</h2></Title>
-
-<h1>Miniproyecto 1</h1>
+<h2 align="Miniproyecto 1">Centered Heading</h2>
 <h3>Vamos a seguir trabajando sobre el proyecto que hemos visto en clase, el de los perros y gatos.
 Vamos a realizar una veterinaria a traves de un menu por consola con las siguiente opciones:
 <h3>1. Insertar mascota</h3>
