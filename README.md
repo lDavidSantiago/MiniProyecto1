@@ -7,11 +7,11 @@ Vamos a realizar una veterinaria a traves de un menu por consola con las siguien
 <h2>3. Eliminar mascota</h2>
 <h2>4. Buscar mascota por nombre</h2>
 <h2>5. Listar todas las mascotas</h2>
-Una mascota puede ser gato o perro, siguiendo una estructura similar a la que tiene el proyecto
+<h3>Una mascota puede ser gato o perro, siguiendo una estructura similar a la que tiene el proyecto
 base. Las mascotas tienen además de los atributos propios de cada animal, tienen cuántas
 vacunas se les ha aplicado, cuanto cuestan y el país de origen.
 Luego de gestionar las mascotas se abrirá un menú donde el usuario podrá seleccionar alguna
-de estas opciones funcionales:
+de estas opciones funcionales:</h3>
 1. Qué mascotas tienen la vacuna malota
 2. Cual es el top 5 de las mascotas más costosas.
 3. Que mascotas no tienen país de origen en latinoamérica.
