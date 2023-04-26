@@ -15,15 +15,15 @@ de estas opciones funcionales:</h3>
 <h3>1. Qué mascotas tienen la vacuna malota</h3>
 <h3>2. Cual es el top 5 de las mascotas más costosas.</h3>
 <h3>3. Que mascotas no tienen país de origen en latinoamérica.</h3>
-<h4>Notas
-<h4>● Debemos usar github para subir los cambios. No basta con que usted y con su nombre
+<h3>Notas
+<h3>● Debemos usar github para subir los cambios. No basta con que usted y con su nombre
 de usuario suba un cambio y lo haga una sola vez y ya, debe verse que usted hizo
 varios commits a lo largo del tiempo. Debe realizar pull request para cada commit y
-debe contar con la aprobación de uno de sus compañeros</h4>
-<h4>● Debemos gestionar y dividir las actividades usando github, o si quiere mejor JIRA.
+debe contar con la aprobación de uno de sus compañeros</h3>
+<h3>● Debemos gestionar y dividir las actividades usando github, o si quiere mejor JIRA.
 Se realizará la revisión por pares en la clase (sobre esto hablaremos y daremos detalle
-en clase)</h4>
-<h4>● Los detalles porcentuales por rubrica no los tengo aun, pero les mando este enunciado
-para que lo vayan trabajando en semana santa</h4>
-<h4>● Grupo de 3 personas</h4>
-<h4>● Fecha de entrega: 19 de abril de 2023</h4>
+en clase)</h3>
+<h3>● Los detalles porcentuales por rubrica no los tengo aun, pero les mando este enunciado
+para que lo vayan trabajando en semana santa</h3>
+<h3>● Grupo de 3 personas</h3>
+<h3>● Fecha de entrega: 19 de abril de 2023</h3>
