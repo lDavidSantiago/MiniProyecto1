@@ -12,9 +12,9 @@ base. Las mascotas tienen además de los atributos propios de cada animal, tiene
 vacunas se les ha aplicado, cuanto cuestan y el país de origen.
 Luego de gestionar las mascotas se abrirá un menú donde el usuario podrá seleccionar alguna
 de estas opciones funcionales:</h3>
-1. Qué mascotas tienen la vacuna malota
-2. Cual es el top 5 de las mascotas más costosas.
-3. Que mascotas no tienen país de origen en latinoamérica.
+<h3>1. Qué mascotas tienen la vacuna malota</h3>
+<h3>2. Cual es el top 5 de las mascotas más costosas.</h3>
+<h3>3. Que mascotas no tienen país de origen en latinoamérica.</h3>
 Notas
 ● Debemos usar github para subir los cambios. No basta con que usted y con su nombre
 de usuario suba un cambio y lo haga una sola vez y ya, debe verse que usted hizo
