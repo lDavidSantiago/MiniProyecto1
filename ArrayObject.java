@@ -125,6 +125,7 @@ public class ArrayObject {
             Scanner s = new Scanner(System.in);
             s.nextLine();
             s.close();
+
             
         }
 }
