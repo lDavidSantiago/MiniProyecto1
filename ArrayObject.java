@@ -22,8 +22,16 @@ public class ArrayObject {
         String originName = input.nextLine();
         System.out.print("Raza: ");             
         String razeName = input.nextLine();
-        System.out.print("Vacuna Malota: ");//Cambiar para que reciba "si" y "no" y lo transforme en booleano
-        Boolean vaccineValue = input.nextBoolean();
+        System.out.print("Vacuna Malota si = 1 | no = 2: ");//Cambiar para que reciba "si" y "no" y lo transforme en booleano
+        Boolean vaccineValue ;
+        byte vm;
+        vm = input.nextByte();
+        if (vm==1){
+            vaccineValue=true;
+        }
+        else{
+            vaccineValue=false;
+        }
         System.out.print("Origen: ");
         input.nextLine();
         String originValue = input.nextLine();
@@ -49,8 +57,6 @@ public class ArrayObject {
             input.nextLine();
         }
         input.nextLine();
-
-
     }
     //PUNTO 2
     public void change_pets_values(){
@@ -64,8 +70,16 @@ public class ArrayObject {
                     String newName = input.nextLine();
                     System.out.print("Raza: ");
                     String newrazeName = input.nextLine();
-                    System.out.print("Vacuna Malota: ");
-                    Boolean newvaccineValue = input.nextBoolean();
+                    System.out.print("Vacuna Malota si = 1 | no = 2: ");
+                    Byte nvm ;
+                    Boolean newvaccineValue;
+                    nvm= input.nextByte();
+                    if (nvm==1){
+                        newvaccineValue=true;
+                    }
+                    else{
+                        newvaccineValue=false;
+                    }                  
                     System.out.print("Origen: ");
                     input.nextLine();
                     String neworiginValue = input.nextLine();
@@ -109,22 +123,26 @@ public class ArrayObject {
             Scanner s = new Scanner(System.in);
             
             s.nextLine();
-            s.close();
-
+            //s.close();---Revisar cerrar s, pues me saltó un error cuando lo cerraba, de todas formas revisar
         }
 
         public void tieneVacunas (){
+            int numeroVacunas=0;
             int index = 0;
             for (Pet pet: arrayOfPets){
                 boolean xd = pet.vaccine;
-                    if (xd){
+                    if (xd==true){
                         clearScreen();
-                        arrayOfPets.get(index).presentation();}
+                        //arrayOfPets.get(index).presentation();//qué hace?
+                        numeroVacunas++;
+                    }
                     
-                index = index+1;}
+                index = index+1;
+            }
+            System.out.println("Cantidad de Mascotas con la vacuna malota: "+numeroVacunas);
             Scanner s = new Scanner(System.in);
             s.nextLine();
-
+            //s.close();---Revisar cerrar s, pues me saltó un error cuando lo cerraba, de todas formas revisar
 
         }
 }

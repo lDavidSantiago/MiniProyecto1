@@ -21,7 +21,7 @@ public class Menuu {
             case 1:
             Mascotas.tieneVacunas();
             clearScreen();
-            mostrarMenu();
+            menuFuncional();
                 break;
             case 2:
                 break;
@@ -64,14 +64,13 @@ public class Menuu {
                 mostrarMenu();
                 break;
             case 4:
-            Mascotas.test();
-            clearScreen();
-            mostrarMenu();
+                Mascotas.test();
+                clearScreen();
+                mostrarMenu();
                 break;
             case 5:
                 Mascotas.main_array();
-                //
-                System.out.print("Presione una tecla para continuar");
+                //Presione ENTER para continuar
                 scanner.nextLine();
                 scanner.nextLine();
                 //
