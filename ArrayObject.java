@@ -15,13 +15,13 @@ public class ArrayObject {
         }
     }
     public void insert_pets(){
-        System.out.println("Nombre: ");
+        System.out.print("Nombre: ");
         String originName = input.nextLine();
-        System.out.println("Raza: ");
+        System.out.print("Raza: ");
         String razeName = input.nextLine();
-        System.out.println("Vacuna Malota: ");
+        System.out.print("Vacuna Malota: ");
         Boolean vaccineValue = input.nextBoolean();
-        System.out.println("Origen: ");
+        System.out.print("Origen: ");
         input.nextLine();
         String originValue = input.nextLine();
         System.out.println("Precio: ");
