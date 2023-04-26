@@ -145,4 +145,22 @@ public class ArrayObject {
             //s.close();---Revisar cerrar s, pues me saltó un error cuando lo cerraba, de todas formas revisar
 
         }
+        public void latinoamerica(){
+            String[] Paises = {"Argentina", "Bolivia", "Brasil", "Chile", "Colombia", "Costa Rica", "Cuba", "Ecuador", "El Salvador", "Guatemala", "Honduras", "México", "Nicaragua", "Panamá", "Paraguay", "Perú", "Puerto Rico", "República Dominicana", "Uruguay", "Venezuela"};//20 paises
+            int index =0;
+            for (Pet pet: arrayOfPets){
+                for (int i=0;i<20;i++){//me va a imprimir 20 veces el animal con origen extranjero
+                    String xd = pet.origin_country;
+                    if(xd!=Paises[i]){
+                        clearScreen();//esto hace que no se vean los 19 prints anteriores, pero tambien borra el animal anterior.
+                        System.out.println("Nombre: "+pet.pet_name+", Raza: "+pet.raze+", Vacuna: "+pet.vaccine+", Origen: "+pet.origin_country+ ", Precio: "+pet.pet_price+", Animal: "+pet.animal);
+                    }
+                }
+                
+            }
+            Scanner s = new Scanner(System.in);
+            s.nextLine();
+            
+
+        }
 }

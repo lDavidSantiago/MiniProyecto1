@@ -26,6 +26,8 @@ public class Menuu {
             case 2:
                 break;
             case 3: 
+                Mascotas.latinoamerica();
+                menuFuncional();
                 break;
             case 4:
                 clearScreen();
