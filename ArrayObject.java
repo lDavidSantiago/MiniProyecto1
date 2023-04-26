@@ -1,6 +1,5 @@
 import java.util.ArrayList;
 import java.util.Scanner;
-
 public class ArrayObject {
     ArrayList<Pet> arrayOfPets = new ArrayList<>();
     Scanner input = new Scanner(System.in);
@@ -23,7 +22,7 @@ public class ArrayObject {
         String originName = input.nextLine();
         System.out.print("Raza: ");             
         String razeName = input.nextLine();
-        System.out.print("Vacuna Malota: ");
+        System.out.print("Vacuna Malota: ");//Cambiar para que reciba "si" y "no" y lo transforme en booleano
         Boolean vaccineValue = input.nextBoolean();
         System.out.print("Origen: ");
         input.nextLine();
@@ -129,6 +128,3 @@ public class ArrayObject {
 
         }
 }
-
-    
-    
