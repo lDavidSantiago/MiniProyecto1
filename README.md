@@ -2,11 +2,11 @@
 <h1>Miniproyecto 1</h1>
 <h2>Vamos a seguir trabajando sobre el proyecto que hemos visto en clase, el de los perros y gatos.
 Vamos a realizar una veterinaria a traves de un menu por consola con las siguiente opciones:
-1. Insertar mascota
-2. Actualizar mascota
-3. Eliminar mascota
-4. Buscar mascota por nombre
-5. Listar todas las mascotas
+<h2>1. Insertar mascota</h2>
+<h2>2. Actualizar mascota</h2>
+<h2>3. Eliminar mascota</h2>
+<h2>4. Buscar mascota por nombre</h2>
+<h2>5. Listar todas las mascotas</h2>
 Una mascota puede ser gato o perro, siguiendo una estructura similar a la que tiene el proyecto
 base. Las mascotas tienen además de los atributos propios de cada animal, tienen cuántas
 vacunas se les ha aplicado, cuanto cuestan y el país de origen.
