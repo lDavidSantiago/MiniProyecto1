@@ -73,15 +73,14 @@ public class ArrayObject {
         public void remove_mascota(){
             System.out.println("ingrese el nombre del animal que quiere eliminar: ");
             String temp_name = input.nextLine();
-            int index = 0;
             for (Pet pet: arrayOfPets){
                 String xd = pet.pet_name;
                     if(temp_name.equals(xd)){
                         clearScreen();
-                        arrayOfPets.remove(index);}
-                index = index+1;}
-            Scanner s = new Scanner(System.in);
-            s.nextLine();}
+                        arrayOfPets.remove(pet);
+                        return;}
+                }
+            }
 
 
         //PUNTO 4
