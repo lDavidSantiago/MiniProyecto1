@@ -1,19 +1,13 @@
 import java.util.Scanner;
-
-
-
 public class Menuu {
     public static ArrayObject Mascotas = new ArrayObject();
     Scanner scanner = new Scanner(System.in);
     private byte opcion;
-
-    public Menuu(){
-        
+    public Menuu(){      
     }
     public void clearScreen() {
         System.out.print("\033[H\033[2J");
-        System.out.flush();
-     
+        System.out.flush();    
     }
     public void menuFuncional(){//6
         byte opcion=0;
@@ -27,11 +21,13 @@ public class Menuu {
             case 1:
             Mascotas.tieneVacunas();
             clearScreen();
-            mostrarMenu();
+            menuFuncional();
                 break;
             case 2:
                 break;
             case 3: 
+                Mascotas.latinoamerica();
+                menuFuncional();
                 break;
             case 4:
                 clearScreen();
@@ -41,7 +37,6 @@ public class Menuu {
                 System.exit(0);
                 break;
         }
-
     }
     public void mostrarMenu(){
         clearScreen();
@@ -54,8 +49,7 @@ public class Menuu {
         opcion = scanner.nextByte();
         clearScreen();
         switch (opcion) {
-            //manejar recursividad para siempre al finalizar volver al menu.
-            
+            //manejar recursividad para siempre al finalizar volver al menu.    
             case 1:
                 Mascotas.insert_pets();
                 clearScreen();
@@ -72,22 +66,19 @@ public class Menuu {
                 mostrarMenu();
                 break;
             case 4:
-            Mascotas.test();
-            clearScreen();
-            mostrarMenu();
+                Mascotas.test();
+                clearScreen();
+                mostrarMenu();
                 break;
             case 5:
                 Mascotas.main_array();
-                //
-                System.out.print("Presione una tecla para continuar");
+                //Presione ENTER para continuar
                 scanner.nextLine();
                 scanner.nextLine();
                 //
                 clearScreen();
                 mostrarMenu();
                 break;
-            
-            
             case 6:
                 clearScreen();
                 menuFuncional();
@@ -97,11 +88,9 @@ public class Menuu {
                 break;  
             default:
                 clearScreen();
-
                 mostrarMenu();
                 break;
         }
-        
         scanner.close();
     }
 }
