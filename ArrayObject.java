@@ -1,5 +1,6 @@
 import java.util.ArrayList;
 import java.util.Scanner;
+
 public class ArrayObject {
     ArrayList<Pet> arrayOfPets = new ArrayList<>();
     Scanner input = new Scanner(System.in);
@@ -146,18 +147,27 @@ public class ArrayObject {
             //s.close();---Revisar cerrar s, pues me saltó un error cuando lo cerraba, de todas formas revisar
 
         }
+        
         public void latinoamerica(){//ojo
             String[] Paises = {"Argentina", "Bolivia", "Brasil", "Chile", "Colombia", "Costa Rica", "Cuba", "Ecuador", "El Salvador", "Guatemala", "Honduras", "México", "Nicaragua", "Panamá", "Paraguay", "Perú", "Puerto Rico", "República Dominicana", "Uruguay", "Venezuela"};//20 paises
+            String[] Origen = new String[arrayOfPets.size()];
             int index = 0;
             for (Pet pet: arrayOfPets){
-
-                String xd = pet.origin_country;
-                if(xd!=Paises[index]){//esto hace que no se vean los 19 prints anteriores, pero tambien borra el animal anterior.
-                    System.out.println("Nombre: "+pet.pet_name+", Raza: "+pet.raze+", Vacuna: "+pet.vaccine+", Origen: "+pet.origin_country+ ", Precio: "+pet.pet_price+", Animal: "+pet.animal);
+                Origen[index] = pet.origin_country;
+            index=index+1;}
+            int index2=0;
+            for (String origensito : Origen) {
+                boolean encontrado = false;
+                for (String pais : Paises) {
+                    if (origensito.equals(pais)) {
+                        encontrado = true;
+                        break;}
                 }
-                index ++;
-            }
-            input.nextLine();
-            
+                if (!encontrado) {
+                    arrayOfPets.get(index2).presentation();
+                }
+            index2=index2+1;
         }
+            input.nextLine();
+    }
 }
