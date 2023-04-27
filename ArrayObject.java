@@ -124,7 +124,6 @@ public class ArrayObject {
 
             
             input.nextLine();
-            //s.close();---Revisar cerrar s, pues me saltó un error cuando lo cerraba, de todas formas revisar
         }
 
         public void tieneVacunas (){
