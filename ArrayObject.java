@@ -144,7 +144,6 @@ public class ArrayObject {
             
             System.out.println("Cantidad de Mascotas con la vacuna malota: "+numeroVacunas);
             input.nextLine();
-            //s.close();---Revisar cerrar s, pues me saltó un error cuando lo cerraba, de todas formas revisar
 
         }
         
