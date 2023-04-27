@@ -145,7 +145,7 @@ public class ArrayObject {
             //s.close();---Revisar cerrar s, pues me saltó un error cuando lo cerraba, de todas formas revisar
 
         }
-        public void latinoamerica(){
+        public void latinoamerica(){//ojo
             String[] Paises = {"Argentina", "Bolivia", "Brasil", "Chile", "Colombia", "Costa Rica", "Cuba", "Ecuador", "El Salvador", "Guatemala", "Honduras", "México", "Nicaragua", "Panamá", "Paraguay", "Perú", "Puerto Rico", "República Dominicana", "Uruguay", "Venezuela"};//20 paises
             int index =0;
             for (Pet pet: arrayOfPets){
