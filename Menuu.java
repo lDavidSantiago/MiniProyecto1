@@ -24,6 +24,9 @@ public class Menuu {
             menuFuncional();
                 break;
             case 2:
+                Mascotas.Top5();
+                clearScreen();
+                menuFuncional();
                 break;
             case 3: 
                 Mascotas.latinoamerica();

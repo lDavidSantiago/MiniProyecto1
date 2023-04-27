@@ -1,4 +1,5 @@
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.Scanner;
 
 public class ArrayObject {
@@ -152,7 +153,8 @@ public class ArrayObject {
             int index = 0;
             for (Pet pet: arrayOfPets){
                 Origen[index] = pet.origin_country;
-            index=index+1;}
+                index=index+1;
+            }
             int index2=0;
             for (String origensito : Origen) {
                 boolean encontrado = false;
@@ -168,5 +170,40 @@ public class ArrayObject {
         }
             input.nextLine();
     }
-    //test por si cristian la embarro
+    public void Top5(){
+        clearScreen();
+        int n= arrayOfPets.size();
+        float[] top5Mascotas = new float[n];
+        int index = 0;
+        for (Pet pet:arrayOfPets) {
+            float xd = pet.pet_price;
+            top5Mascotas[index] = xd;
+            
+            index++;
+        }
+        
+        Arrays.sort(top5Mascotas);
+        
+        float[] mayores = new float[n];
+        int j = 0;
+        
+        for (int i = n-1; i >= 0; i--) {
+            mayores[j] = top5Mascotas[i];
+            j++;
+        }
+        if (n<=5){
+            System.out.println("Los " + n + " mayores números ingresados son:");
+            for (int i = 0; i < n; i++) {
+                System.out.println(mayores[i]);
+            }
+        }
+        else{
+            System.out.println("Los " + 5+ " mayores números ingresados son:");
+            for (int i = 0; i < 5; i++) {
+                System.out.println(mayores[i]);
+            }
+        }
+        
+        input.nextLine();
+    }
 }
