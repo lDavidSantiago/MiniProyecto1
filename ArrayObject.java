@@ -137,6 +137,8 @@ public class ArrayObject {
                         numeroVacunas++;
                     }
                     
+                index = index+1;}
+                input.nextLine();
                 index = index+1;
             }
             System.out.println("Cantidad de Mascotas con la vacuna malota: "+numeroVacunas);
