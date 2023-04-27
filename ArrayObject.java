@@ -120,9 +120,9 @@ public class ArrayObject {
                         clearScreen();
                         arrayOfPets.get(index).presentation();}
                 index = index+1;}
-            Scanner s = new Scanner(System.in);
+
             
-            s.nextLine();
+            input.nextLine();
             //s.close();---Revisar cerrar s, pues me saltó un error cuando lo cerraba, de todas formas revisar
         }
 
@@ -136,20 +136,18 @@ public class ArrayObject {
                         //arrayOfPets.get(index).presentation();//qué hace?
                         numeroVacunas++;
                     }
-                    
-                index = index+1;}
-                input.nextLine();
                 index = index+1;
             }
+
+                index = index+1;
+            
             System.out.println("Cantidad de Mascotas con la vacuna malota: "+numeroVacunas);
-            Scanner s = new Scanner(System.in);
-            s.nextLine();
+            input.nextLine();
             //s.close();---Revisar cerrar s, pues me saltó un error cuando lo cerraba, de todas formas revisar
 
         }
         public void latinoamerica(){//ojo
             String[] Paises = {"Argentina", "Bolivia", "Brasil", "Chile", "Colombia", "Costa Rica", "Cuba", "Ecuador", "El Salvador", "Guatemala", "Honduras", "México", "Nicaragua", "Panamá", "Paraguay", "Perú", "Puerto Rico", "República Dominicana", "Uruguay", "Venezuela"};//20 paises
-            int index =0;
             for (Pet pet: arrayOfPets){
                 for (int i=0;i<20;i++){//me va a imprimir 20 veces el animal con origen extranjero
                     String xd = pet.origin_country;
@@ -160,9 +158,7 @@ public class ArrayObject {
                 }
                 
             }
-            Scanner s = new Scanner(System.in);
-            s.nextLine();
+            input.nextLine();
             
-
         }
 }
