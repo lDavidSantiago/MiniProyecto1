@@ -1,5 +1,6 @@
 import java.util.ArrayList;
 import java.util.Scanner;
+
 public class ArrayObject {
     ArrayList<Pet> arrayOfPets = new ArrayList<>();
     Scanner input = new Scanner(System.in);
@@ -120,10 +121,9 @@ public class ArrayObject {
                         clearScreen();
                         arrayOfPets.get(index).presentation();}
                 index = index+1;}
-            Scanner s = new Scanner(System.in);
+
             
-            s.nextLine();
-            //s.close();---Revisar cerrar s, pues me saltó un error cuando lo cerraba, de todas formas revisar
+            input.nextLine();
         }
 
         public void tieneVacunas (){
@@ -136,17 +136,16 @@ public class ArrayObject {
                         //arrayOfPets.get(index).presentation();//qué hace?
                         numeroVacunas++;
                     }
-                    
                 index = index+1;
             }
-            input.nextLine();
-            index = index+1;
+
+                index = index+1;
+            
             System.out.println("Cantidad de Mascotas con la vacuna malota: "+numeroVacunas);
-            Scanner s = new Scanner(System.in);
-            s.nextLine();
-            //s.close();---Revisar cerrar s, pues me saltó un error cuando lo cerraba, de todas formas revisar
+            input.nextLine();
 
         }
+        
         public void latinoamerica(){//ojo
             String[] Paises = {"Argentina", "Bolivia", "Brasil", "Chile", "Colombia", "Costa Rica", "Cuba", "Ecuador", "El Salvador", "Guatemala", "Honduras", "México", "Nicaragua", "Panamá", "Paraguay", "Perú", "Puerto Rico", "República Dominicana", "Uruguay", "Venezuela"};//20 paises
             String[] Origen = new String[arrayOfPets.size()];
@@ -167,6 +166,7 @@ public class ArrayObject {
                 }
             index2=index2+1;
         }
+            input.nextLine();
     }
-    //test cristian
+    //test por si cristian la embarro
 }
